@@ -1,0 +1,122 @@
+[
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\TP_PickUpComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\TP_PickUpComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\TP_WeaponComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\TP_WeaponComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\Wraithbound.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\Wraithbound.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\Wraithbound.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundCharacter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundGameMode.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundPlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundPlayerController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundProjectile.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\WraithboundProjectile.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Default\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	}
+]
