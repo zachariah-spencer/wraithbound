@@ -1,5 +1,21 @@
 [
 	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\DungeonGenerator.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Wraithbound\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\DungeonGenerator.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\gamedev\\Unreal Projects\\Wraithbound\\.vscode\\compileCommands_Wraithbound\\Wraithbound.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
 		"file": "D:\\gamedev\\Unreal Projects\\Wraithbound\\Source\\Wraithbound\\TP_PickUpComponent.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe",
