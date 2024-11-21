@@ -38,6 +38,4 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int RoomSpawnAttempts;
 
-	
-
 };
