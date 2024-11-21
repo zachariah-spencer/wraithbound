@@ -25,12 +25,18 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SpawnStartRoom();
+	
+	UFUNCTION(BlueprintCallable)
+	void CheckDungeonSoftLock();
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category= "Custom Configs")
 	TSubclassOf<AActor> OriginRoomTemplate;
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<USceneComponent*> ExitsArray;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int RoomSpawnAttempts;
 
 	
 

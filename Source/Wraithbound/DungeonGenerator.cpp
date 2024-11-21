@@ -3,7 +3,7 @@
 
 #include "DungeonGenerator.h"
 
-#include "Components/ArrowComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -11,6 +11,7 @@ ADungeonGenerator::ADungeonGenerator()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	RoomSpawnAttempts = 0;
 
 }
 
@@ -28,9 +29,8 @@ void ADungeonGenerator::Tick(float DeltaTime)
 
 }
 
-void ADungeonGenerator::SpawnStartRoom() {
-	UE_LOG(LogTemp, Warning, TEXT("RUNNING C++ CLASS"));
-
+void ADungeonGenerator::SpawnStartRoom()
+{
 	// Spawn first room of the dungeon
 	AActor* OriginRoom =  GetWorld()->SpawnActor<AActor>(OriginRoomTemplate, GetRootComponent()->GetComponentLocation(), GetRootComponent()->GetComponentRotation());
 
@@ -49,3 +49,14 @@ void ADungeonGenerator::SpawnStartRoom() {
 	// 	UE_LOG(LogTemp, Warning, TEXT("%s"), *ExitInstance->GetName());
 	// }
 }
+
+void ADungeonGenerator::CheckDungeonSoftLock()
+{
+	UE_LOG(LogTemp, Warning, TEXT("%d"), RoomSpawnAttempts);
+	if (RoomSpawnAttempts >= 300)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("RESETTING LEVEL"));
+		UGameplayStatics::OpenLevel(this, FName("WraithboundDungeonLevel"), true);
+	}
+}
+
