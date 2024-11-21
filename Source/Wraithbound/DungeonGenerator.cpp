@@ -3,6 +3,8 @@
 
 #include "DungeonGenerator.h"
 
+#include "Components/ArrowComponent.h"
+
 
 // Sets default values
 ADungeonGenerator::ADungeonGenerator()
@@ -32,10 +34,18 @@ void ADungeonGenerator::SpawnStartRoom() {
 	// Spawn first room of the dungeon
 	AActor* OriginRoom =  GetWorld()->SpawnActor<AActor>(OriginRoomTemplate, GetRootComponent()->GetComponentLocation(), GetRootComponent()->GetComponentRotation());
 
-	// Append first room's exits to the array of available exits for the dungeon generator to use
-	// ExitsArray.Append(OriginRoom->GetComponentsByTag(USceneComponent::StaticClass(), FName("Exits")));
+	// Get the scene component that contains all the available exits offered by the new room as its children
+	USceneComponent* ExitsFolder = Cast<USceneComponent, UActorComponent>(OriginRoom->GetComponentsByTag(UActorComponent::StaticClass(), "Exits Folder")[0]);
 
-	// for(USceneComponent& Exit : ExitsArray){
-		
+	// Get the children components of the ExitsFolder and store them in an array called Exits
+	TArray<USceneComponent*> Exits;
+	ExitsFolder->GetChildrenComponents(false, Exits);
+	
+	// Append the room's exits to the array of total available exits for the dungeon generator to use
+	ExitsArray.Append(Exits);
+	
+	// Loop through the exits array to verify it is storing the correct information
+	// for(USceneComponent* ExitInstance : ExitsArray){
+	// 	UE_LOG(LogTemp, Warning, TEXT("%s"), *ExitInstance->GetName());
 	// }
 }

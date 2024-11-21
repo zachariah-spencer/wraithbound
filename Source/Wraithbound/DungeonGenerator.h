@@ -6,7 +6,6 @@
 #include "GameFramework/Actor.h"
 #include "DungeonGenerator.generated.h"
 
-
 UCLASS()
 class WRAITHBOUND_API ADungeonGenerator : public AActor
 {
@@ -30,7 +29,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> OriginRoomTemplate;
 
-	// UPROPERTY(EditAnywhere)
-	// TArray<UArrowComponent*> ExitsArray;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<USceneComponent*> ExitsArray;
+
+	
 
 };
