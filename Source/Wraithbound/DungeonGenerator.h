@@ -29,13 +29,40 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void CheckDungeonSoftLock();
 
-	UPROPERTY(EditAnywhere, Category= "Custom Configs")
-	TSubclassOf<AActor> OriginRoomTemplate;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<USceneComponent*> ExitsArray;
+	UFUNCTION(BlueprintCallable)
+	void SpawnNextRoom();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UFUNCTION(BlueprintCallable)
+	void CheckRoomPositionValid(AActor* LatestSpawnedRoom, USceneComponent* UsedExitPoint);
+
+	UFUNCTION(BlueprintCallable)
+	void GetOverlappingRooms(AActor* LatestSpawnedRoom);
+
+	UFUNCTION(BlueprintCallable)
+	void CloseUnusedExits();
+
+	UPROPERTY(EditAnywhere, Category= "Dungeon Generator")
+	TSubclassOf<AActor> OriginRoomBP;
+
+	UPROPERTY(EditAnywhere, Category= "Dungeon Generator")
+	TSubclassOf<AActor> EndWallBP;
+	
+	UPROPERTY(EditAnywhere, Category= "Dungeon Generator")
+	TArray<TSubclassOf<AActor>> PossibleRoomsArray;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Dungeon Generator")
+	TArray<USceneComponent*> ExitsArray;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Dungeon Generator")
+	TArray<USceneComponent*> OverlappingRoomsArray;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Dungeon Generator")
 	int RoomSpawnAttempts;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Dungeon Generator")
+	int RoomsToSpawn;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "Dungeon Generator")
+	bool IsDungeonGenerationComplete;
 
 };
