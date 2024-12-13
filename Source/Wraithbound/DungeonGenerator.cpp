@@ -79,21 +79,20 @@ void ADungeonGenerator::SpawnNextRoom()
     
     // Pick a random exit point from the array of possible exit points
     USceneComponent* SelectedExitPoint = ExitsArray[FMath::RandRange(0, ExitsArray.Num()-1)];
-    
-    // Remove the utilized exit point from the array of possible exit points so it isn't used twice
-    ExitsArray.Remove(SelectedExitPoint);
+
+	/* LEGACY CODE:
+	 * This was removing showing a room had spawned at a given exit point before checking if the room was spawned in a valid position
+	 * As a result, sometimes "exit" points would not be closed up properly, leaving gaps to escape the map from. */
+    // ExitsArray.Remove(SelectedExitPoint);
     
     // Pick a random room from the list of possible room configurations to try to spawn next
     TSubclassOf<AActor> SelectedRoom = PossibleRoomsArray[FMath::RandRange(0, PossibleRoomsArray.Num()-1)];
     
     // Spawn the new room and line up its spawn transform with the selected exit point's transform
     AActor* SpawnedRoom = GetWorld()->SpawnActor<AActor>(SelectedRoom, SelectedExitPoint->GetComponentLocation(), SelectedExitPoint->GetComponentRotation());
-    
-    // FIXME: Blueprint implementation required delay or it would crash the engine. Never figured out why. May not be required with the way C++ implements it on the back-end.
-    // FTimerHandle Delay;
-    // GetWorldTimerManager().SetTimer(UnusedHandle, this, &AMyActor::TimerElapsed, TimerDelay, false);
+	
     CheckDungeonSoftLock();
-    // FIXME: Implement CheckRoomsOverlapping();
+
     CheckRoomPositionValid(SpawnedRoom, SelectedExitPoint);
 }
 
@@ -114,6 +113,8 @@ void ADungeonGenerator::CheckRoomPositionValid(AActor* LatestSpawnedRoom, UScene
 	{
 		OverlappingRoomsArray.Empty();
 		RoomsToSpawn--;
+
+		// Remove the utilized exit point from the array of possible exit points so it isn't closed up with a wall later
 		ExitsArray.Remove(UsedExitPoint);
 
 		USceneComponent* ExitsFolder = Cast<USceneComponent, UActorComponent>(LatestSpawnedRoom->GetComponentsByTag(UActorComponent::StaticClass(), "Exits Folder")[0]);
